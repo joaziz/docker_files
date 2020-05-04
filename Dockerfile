@@ -31,17 +31,18 @@ RUN echo "ServerSignature Off" >> /etc/apache2/apache2.conf
 
 RUN docker-php-ext-install gd
 RUN docker-php-ext-install bz2
-RUN docker-php-ext-install zip
+
 RUN docker-php-ext-install intl
 RUN docker-php-ext-install iconv
 RUN docker-php-ext-install bcmath
 RUN docker-php-ext-install sockets
 RUN docker-php-ext-install opcache
 RUN docker-php-ext-install calendar
-RUN docker-php-ext-install mbstring
+
 RUN docker-php-ext-install pdo_mysql
 
-
+#RUN docker-php-ext-install zip
+#RUN docker-php-ext-install mbstring
 
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 
