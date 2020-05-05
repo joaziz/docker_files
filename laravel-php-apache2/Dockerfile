@@ -3,7 +3,7 @@
 ##  use php apache 
 ##
 
-FROM php:7.4-apache
+FROM php:7.2-apache
 
 RUN apt-get update
 
